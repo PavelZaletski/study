@@ -6,7 +6,7 @@ var express = require('express'),
 
 app.use(bodyParser.json({limit: '3mB'}));
 app.use(bodyParser.urlencoded({ limit: '3mB', extended: true }));
-app.use(express.static(path.join(__dirname, 'Sources')));
+
 
 app.get('/', function(req, res){
 	res.json([{
