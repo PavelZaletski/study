@@ -13,6 +13,12 @@ app.get('/', function(request, response) {
   response.render('pages/index');
 });
 
+app.get('/courses', function(request, response) {
+  response.json([{
+  	a: 5
+  }])
+});
+
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
