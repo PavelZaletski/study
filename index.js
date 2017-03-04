@@ -14,7 +14,7 @@ app.get('/', function(request, response) {
 });
 
 app.get('/courses', function(request, response) {
-	res.header("Access-Control-Allow-Origin", "*");
+	response.header("Access-Control-Allow-Origin", "*");
 	response.json([{
 		title: 'video course 1',
 		duration: '1h 28min',
