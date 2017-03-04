@@ -19,20 +19,38 @@ app.get('/courses', function(request, response) {
 		title: 'video course 1',
 		duration: '1h 28min',
 		date: 1488638630467,
-		description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s',
-		preview_img: 'https://epam-study.herokuapp.com/img/1.jpg'
+		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sapien mauris, tristique sed facilisis pretium, vehicula sed dui. Donec nec ex in libero feugiat varius ut nec diam',
+		img: 'https://epam-study.herokuapp.com/img/1.jpg'
 	}, {
 		title: 'video course 2',
 		duration: '50min',
 		date: 1488648630459,
-		description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s',
-		preview_img: 'https://epam-study.herokuapp.com/img/2.jpg'
+		description: 'Donec dolor tellus, viverra at malesuada in, varius a mi. Mauris nisl leo, faucibus ac justo ut, gravida fringilla dui. Mauris eleifend purus velit, ac sagittis ligula vulputate ut. Etiam consequat porta arcu, vitae eleifend elit consectetur ac',
+		img: 'https://epam-study.herokuapp.com/img/2.jpg'
 	}, {
 		title: 'video course 3',
-		duration: '1h 28min',
+		duration: '1h 05min',
 		date: 1488678630163,
-		description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s',
-		preview_img: 'https://epam-study.herokuapp.com/img/3.jpg'
+		description: 'Praesent ac iaculis ipsum. Vivamus non feugiat tellus, eu finibus eros. Suspendisse eu maximus ligula, vitae dapibus eros. Suspendisse sed mauris sit amet diam blandit sagittis nec at dolor',
+		img: 'https://epam-study.herokuapp.com/img/3.jpg'
+	}, {
+		title: 'video course 4',
+		duration: '1h 37min',
+		date: 1488638630260,
+		description: 'Curabitur ultricies ante sit amet vehicula efficitur. Fusce suscipit aliquam quam eu elementum. Mauris non arcu orci. Vestibulum tincidunt, quam non molestie rutrum, leo nisl interdum ligula, sit amet euismod nibh enim nec elit',
+		img: 'https://epam-study.herokuapp.com/img/4.jpg'
+	}, {
+		title: 'video course 5',
+		duration: '1h 15min',
+		date: 1488638630218,
+		description: 'Etiam feugiat dui felis, non fringilla dui iaculis non. Pellentesque ac urna sit amet purus molestie malesuada eget et neque. Suspendisse condimentum mauris s',
+		img: 'https://epam-study.herokuapp.com/img/5.jpg'
+	}, {
+		title: 'video course 6',
+		duration: '45min',
+		date: 1488631530285,
+		description: 'Aliquam venenatis felis convallis metus euismod suscipit. Ut efficitur laoreet neque non imperdiet. Duis sit amet consectetur purus, in dictum lectus. Vestibulum ante ipsum primis in faucibus',
+		img: 'https://epam-study.herokuapp.com/img/6.jpg'
 	}]);
 });
 
