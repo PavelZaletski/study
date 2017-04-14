@@ -13,6 +13,11 @@ app.get('/', function(request, response) {
 	response.render('pages/index');
 });
 
+app.post('/', function(request, response) {
+	response.setHeader('Access-Control-Allow-Origin', '*')
+  response.json({status: 'success'});
+});
+
 app.get('/courses', function(request, response) {
 	response.header("Access-Control-Allow-Origin", "*");
 	response.json([{
