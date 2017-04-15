@@ -35,7 +35,7 @@ app.get('/courses/:id', function(req, res) {
 	res.header("Access-Control-Allow-Origin", "*");
 
 	list = list.filter((item)=>{
-		return item.id !== req.params.id;
+		return item._id !== req.params.id;
 	});
 
 	res.json(list);
