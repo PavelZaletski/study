@@ -22,9 +22,13 @@ app.post('/', function(request, response) {
 
 app.get('/courses', function(req, res) {
 	res.header("Access-Control-Allow-Origin", "*");
-	res.json(db.courses.filter((item)=>{
-		return item._title.indexOf(req.query.search) !== -1;
-	}));
+	let list = db.courses;
+	if (req.query.search){
+		list = list.filter((item)=>{
+			return item._title.indexOf(req.query.search) !== -1;
+		});
+	}
+	res.json(list);
 });
 
 app.listen(app.get('port'), function() {
