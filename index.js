@@ -22,7 +22,7 @@ app.post('/', function(request, response) {
 
 app.get('/courses', function(req, res) {
 	res.header("Access-Control-Allow-Origin", "*");
-	let list = db.courses;
+	var list = db.courses;
 	if (req.query.search){
 		list = list.filter((item)=>{
 			return item._title.indexOf(req.query.search) !== -1;
