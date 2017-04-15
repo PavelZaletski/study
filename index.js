@@ -31,7 +31,7 @@ app.get('/courses', function(req, res) {
 	res.json(list);
 });
 
-app.delete('/courses/:id', function(req, res) {
+app.get('/courses/:id', function(req, res) {
 	res.header("Access-Control-Allow-Origin", "*");
 
 	list = list.filter((item)=>{
