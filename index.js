@@ -41,6 +41,20 @@ app.get('/courses/:id', function(req, res) {
 	res.json(list);
 });
 
+app.post('/auth/login', function(req, res) {
+	res.header("Access-Control-Allow-Origin", "*");
+
+	if (req.body.username === 'test' && req.body.password === '12345'){
+		res.json({
+			status: 'success', token: 'token12345'
+		});
+	} else {
+		res.json({
+			status: 'error'
+		});
+	}
+});
+
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
