@@ -20,9 +20,11 @@ app.post('/', function(request, response) {
   response.json({status: 'success'});
 });
 
-app.get('/courses', function(request, response) {
-	response.header("Access-Control-Allow-Origin", "*");
-	response.json(db.courses);
+app.get('/courses', function(req, res) {
+	res.header("Access-Control-Allow-Origin", "*");
+	res.json(db.courses.filter((item)=>{
+		return item._title.indexOf(req.query.search) !== -1;
+	}));
 });
 
 app.listen(app.get('port'), function() {
