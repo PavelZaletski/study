@@ -17,17 +17,27 @@ app.get('/', function(request, response) {
 
 app.post('/', function(request, response) {
 	response.setHeader('Access-Control-Allow-Origin', '*')
-  response.json({status: 'success'});
+	response.json({status: 'success'});
 });
 
+var list = db.courses;
 app.get('/courses', function(req, res) {
 	res.header("Access-Control-Allow-Origin", "*");
-	var list = db.courses;
 	if (req.query.search){
 		list = list.filter((item)=>{
 			return item._title.indexOf(req.query.search) !== -1;
 		});
 	}
+	res.json(list);
+});
+
+app.delete('/courses/:id', function(req, res) {
+	res.header("Access-Control-Allow-Origin", "*");
+
+	list = list.filter((item)=>{
+		return item.id !== req.params.id;
+	});
+
 	res.json(list);
 });
 
