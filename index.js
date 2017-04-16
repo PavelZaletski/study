@@ -57,7 +57,7 @@ app.delete('/courses/:id', function(req, res) {
 		return item._id !== req.params.id;
 	});
 
-	res.json(list);
+	res.json({status: 'success'});
 });
 
 app.post('/auth/login', function(req, res) {
