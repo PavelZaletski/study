@@ -21,7 +21,7 @@ app.get('/', function(request, response) {
 
 app.use(function(req, res, next){
 	res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Methods", "POST, GET");
+    res.header("Access-Control-Allow-Methods", "POST, GET, DELETE");
     res.header("Access-Control-Max-Age", "3600");
     res.header("Access-Control-Allow-Headers", "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 	next();
@@ -36,14 +36,21 @@ var list = db.courses;
 app.get('/courses', function(req, res) {
 	res.header("Access-Control-Allow-Origin", "*");
 	if (req.query.search){
-		list = list.filter((item)=>{
-			return item._title.indexOf(req.query.search) !== -1;
-		});
+		res.json(list.filter((item)=>{
+				return item._title.indexOf(req.query.search) !== -1;
+			}));
+	} else {
+		res.json(list);
 	}
+});
+
+app.get('/courses/refresh', function(req, res) {
+	res.header("Access-Control-Allow-Origin", "*");
+	list = db.courses;
 	res.json(list);
 });
 
-app.get('/courses/:id', function(req, res) {
+app.delete('/courses/:id', function(req, res) {
 	res.header("Access-Control-Allow-Origin", "*");
 
 	list = list.filter((item)=>{
