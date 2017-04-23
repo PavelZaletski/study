@@ -86,6 +86,23 @@ app.get('/auth/logout', function(req, res) {
 	res.json({status: 'success'});
 });
 
+app.get('/authors', function(req, res) {
+	res.header("Access-Control-Allow-Origin", "*");
+	res.header("Access-Control-Allow-Methods", "POST, GET");
+    res.header("Access-Control-Max-Age", "3600");
+    res.header("Access-Control-Allow-Headers", "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
+
+	res.json([
+		'Author1',
+		'Author2',
+		'Author3',
+		'Author4',
+		'Author5',
+		'Author6',
+		'Author7'
+	]);
+});
+
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
