@@ -1,0 +1,41 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 95%;
+}
+
+section {
+    height: 87%;
+}
+
+section div {
+    background-color: #59A1FF;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    float: left;
+    border: 1px solid white;
+}
+
+section .active {
+	background-color: #FF9F6B;
+}
+
+.target {
+    background-color: #9DC7FF;
+}
+
+section .head {
+    background-color: #FF823E;
+}
+
+section .bonus {
+    background-color: #FFFB91;
+}
+
+#info {
+    color: red;
+    font-size: 12pt;
+}
