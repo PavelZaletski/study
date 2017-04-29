@@ -63,7 +63,7 @@ app.delete('/courses/:id', function(req, res) {
 app.get('/courses/:id', function(req, res) {
 	res.header("Access-Control-Allow-Origin", "*");
 
-	let course = list.find((item)=>{
+	var course = list.find((item)=>{
 		return item._id === req.params.id;
 	});
 
