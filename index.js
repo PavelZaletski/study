@@ -60,6 +60,16 @@ app.delete('/courses/:id', function(req, res) {
 	res.json({status: 'success'});
 });
 
+app.get('/courses/:id', function(req, res) {
+	res.header("Access-Control-Allow-Origin", "*");
+
+	let course = list.find((item)=>{
+		return item._id === req.params.id;
+	});
+
+	res.json(course);
+});
+
 app.post('/auth/login', function(req, res) {
 	res.header("Access-Control-Allow-Origin", "*");
 	res.header("Access-Control-Allow-Methods", "POST, GET");
