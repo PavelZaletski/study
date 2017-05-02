@@ -104,9 +104,7 @@ app.post('/auth/login', function(req, res) {
 			status: 'success', token: 'token12345'
 		});
 	} else {
-		res.json({
-			status: 'error'
-		});
+		res.status(401).send('401 Anauthorized');
 	}
 });
 
