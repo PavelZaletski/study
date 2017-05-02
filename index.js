@@ -70,6 +70,23 @@ app.get('/courses/:id', function(req, res) {
 	res.json(course);
 });
 
+app.post('/courses', function(req, res) {
+	res.header("Access-Control-Allow-Origin", "*");
+	var c = req.body;
+
+	list.push({
+		_id: Math.round(Math.random()*10000),
+		_date: c._date,
+		_description: c._description,
+		_duration: c._duration,
+		_title: c._title,
+		_authors: c._authors,
+		_topRated: !!c._topRated
+	});
+
+	res.json({status: 'success'});
+});
+
 app.put('/courses/:id', function(req, res) {
 	res.header("Access-Control-Allow-Origin", "*");
 	var c = req.body;
