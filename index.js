@@ -75,7 +75,7 @@ app.post('/courses', function(req, res) {
 	var c = req.body;
 
 	list.push({
-		_id: Math.round(Math.random()*10000),
+		_id: Math.round(Math.random()*100000) + '',
 		_date: c._date,
 		_description: c._description,
 		_duration: c._duration,
