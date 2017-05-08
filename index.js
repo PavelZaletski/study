@@ -118,7 +118,7 @@ app.post('/auth/login', function(req, res) {
 
 	if (req.body.username === 'test' && req.body.password === '12345'){
 		res.json({
-			status: 'success', token: 'token12345'
+			status: 'success', token: 'token12345', username: 'test'
 		});
 	} else {
 		res.status(401).send('401 Anauthorized');

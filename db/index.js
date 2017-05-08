@@ -2,7 +2,7 @@ var courses = [{
 		_id: '1',
 		_title: 'Lorem ipsum dolor sit amet',
 		_duration: 75,
-		_date: 1492329207877,
+		_date: 1494328589344,
 		_description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sapien mauris, tristique sed facilisis pretium, vehicula sed dui. Donec nec ex in libero feugiat varius ut nec diam',
 		_topRated: true,
 		_authors: ['Author1']
@@ -10,7 +10,7 @@ var courses = [{
 		_id: '2',
 		_title: 'Quisque iaculis tincidunt',
 		_duration: 28,
-		_date: 1490910996354,
+		_date: 1494228589344,
 		_description: 'Donec dolor tellus, viverra at malesuada in, varius a mi. Mauris nisl leo, faucibus ac justo ut, gravida fringilla dui. Mauris eleifend purus velit, ac sagittis ligula vulputate ut. Etiam consequat porta arcu, vitae eleifend elit consectetur ac',
 		_topRated: false,
 		_authors: ['Author2']
@@ -18,7 +18,7 @@ var courses = [{
 		_id: '3',
 		_title: 'Mauris ornare tellus vitae ',
 		_duration: 48,
-		_date: 1493329207877,
+		_date: 1495228589344,
 		_description: 'Praesent ac iaculis ipsum. Vivamus non feugiat tellus, eu finibus eros. Suspendisse eu maximus ligula, vitae dapibus eros. Suspendisse sed mauris sit amet diam blandit sagittis nec at dolor',
 		_topRated: false,
 		_authors: ['Author6']
@@ -26,7 +26,7 @@ var courses = [{
 		_id: '4',
 		_title: 'Duis ornare mattis rhoncus',
 		_duration: 80,
-		_date: 1491530996354,
+		_date: 1494728589344,
 		_description: 'Curabitur ultricies ante sit amet vehicula efficitur. Fusce suscipit aliquam quam eu elementum. Mauris non arcu orci. Vestibulum tincidunt, quam non molestie rutrum, leo nisl interdum ligula, sit amet euismod nibh enim nec elit',
 		_topRated: false,
 		_authors: ['Author4']
@@ -34,7 +34,7 @@ var courses = [{
 		_id: '5',
 		_title: 'Sed sed viverra turpis',
 		_duration: 90,
-		_date: 1498638630218,
+		_date: 1494228489344,
 		_description: 'Etiam feugiat dui felis, non fringilla dui iaculis non. Pellentesque ac urna sit amet purus molestie malesuada eget et neque. Suspendisse condimentum mauris s',
 		_topRated: false,
 		_authors: ['Author1', 'Author4']
@@ -50,7 +50,7 @@ var courses = [{
 		_id: '7',
 		_title: 'elis convallis metus euism',
 		_duration: 37,
-		_date: 1492241327373,
+		_date: 1494928589344,
 		_description: 'Aliquam venenatis felis convallis metus euismod suscipit. Ut efficitur laoreet neque non imperdiet. Duis sit amet consectetur purus, in dictum lectus. Vestibulum ante ipsum primis in faucibus',
 		_topRated: false,
 		_authors: ['Author1']
@@ -58,7 +58,7 @@ var courses = [{
 		_id: '8',
 		_title: 'urna sit amet purus moles',
 		_duration: 67,
-		_date: 1498241327373,
+		_date: 1494218589344,
 		_description: 'Aliquam venenatis felis convallis metus euismod suscipit. Ut efficitur laoreet neque non imperdiet. Duis sit amet consectetur purus, in dictum lectus. Vestibulum ante ipsum primis in faucibus',
 		_topRated: true,
 		_authors: ['Author4']
@@ -66,7 +66,7 @@ var courses = [{
 		_id: '9',
 		_title: 'Fusce suscipit ali',
 		_duration: 122,
-		_date: 1498211327373,
+		_date: 1497228589344,
 		_description: 'Aliquam venenatis felis convallis metus euismod suscipit. Ut efficitur laoreet neque non imperdiet. Duis sit amet consectetur purus, in dictum lectus. Vestibulum ante ipsum primis in faucibus',
 		_topRated: false,
 		_authors: ['Author5']
@@ -90,7 +90,7 @@ var courses = [{
 		_id: '12',
 		_title: 'Purus, egestas interdum massa',
 		_duration: 34,
-		_date: 1498211327373,
+		_date: 1498211927373,
 		_description: 'Nam tincidunt egestas vulputate. Aenean efficitur augue vitae auctor imperdiet. Mauris consectetur mollis risus ac bibendum. Aliquam erat volutpat.',
 		_topRated: true,
 		_authors: ['Author2', 'Author7']
@@ -138,7 +138,7 @@ var courses = [{
 		_id: '18',
 		_title: 'Curabitur id arcu ut sem viverra tincidunt',
 		_duration: 33,
-		_date: 1492327207877,
+		_date: 1494728789344,
 		_description: 'dolor vitae porta rhoncus. Proin eget euismod enim, vitae lobortis turpis. Nam efficitur congue rutrum. Vivamus accumsan purus eget dapibus faucibus. Donec consectetur consequat elit eu dignissim. Integer vehicula odio eget magna hendrerit, non vestibulum felis condimentum',
 		_topRated: false,
 		_authors: ['Author2', 'Author3']
@@ -146,7 +146,7 @@ var courses = [{
 		_id: '19',
 		_title: 'Etiam fermentum ex luctus',
 		_duration: 105,
-		_date: 1492349207877,
+		_date: 1494028589344,
 		_description: 'ue habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In fringilla libero vitae consectetur condimentum. Pellentesque ullamcorper turpis',
 		_topRated: true,
 		_authors: ['Author2', 'Author4']
